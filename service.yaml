@@ -4,11 +4,9 @@ metadata:
   name: hello-world
   namespace: default
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: hello-world
   ports:
     - name: web
       port: 80
-      targetPort: web
-      nodePort: 30001
