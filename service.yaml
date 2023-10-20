@@ -4,7 +4,7 @@ metadata:
   name: hello-world
   namespace: default
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: hello-world
   ports:
